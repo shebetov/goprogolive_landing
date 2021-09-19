@@ -1,0 +1,75 @@
+body {
+    overflow-x: hidden;
+}
+.navbar-nav {
+    width: 350px;
+}
+.main {
+    background:  no-repeat 100% url('/static/img/main-bg.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+    position: relative;
+}
+.main-content {
+    background: rgba(0, 0, 0, 0.5);    
+}
+.divider {
+    align-self: flex-end;
+    position: absolute;
+    bottom: -1px;
+    z-index: 3;
+    width: 100%;
+    height: 4vw;
+    transform: translate(0);
+}
+.howworks {
+    background-image: url('/static/img/bg-arrow.png');
+    background-repeat: repeat-y;
+    background-position: center;
+    position: relative;
+    z-index: 4;
+}
+
+.form {
+    background:  no-repeat 100% url('/static/img/main-bg.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    position: relative;
+}
+.form-content {
+    background: rgba(0, 0, 0, 0.5);    
+}
+.form-divider {
+    align-self: flex-end;
+    position: absolute;
+    top: -1px;
+    z-index: 1;
+    width: 100%;
+    height: 6vw;
+    transform: translate(0);
+}
+.form-card {
+    border-radius: 20px;
+}
+.preanimate__fadeInRight, .preanimate__fadeInLeft, .preanimate__backInDown {
+    visibility: hidden;
+}
+
+
+@media (max-width: 992px) {
+    .navbar-expand-lg {
+        display: none;
+    }
+    
+    .divider {
+        height: 10vw; 
+    }
+}
